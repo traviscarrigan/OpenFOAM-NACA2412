@@ -3,7 +3,7 @@ OpenFOAM case for simulating the flow over a NACA 2412 airfoil at 8 degrees angl
 
 The airfoil is aligned with the x-axis, so it's the velocity components that control the angle of attack. The Spalart Allmaras turbulence model is used for this case. 
 
-![Streamlines and velocity contours.](https://raw.github.com/pointwise/ScriptName/master/streamlines.png)
+![Streamlines and velocity contours.](https://raw.github.com/traviscarrigan/OpenFOAM-NACA2412/master/streamlines.png)
 
 ## Usage
 This case is setup to be run using simpleFoam, the steady-state solver for incompressible, turbulent flow. Simply run the *run.sh* script to renumber the mesh and execute the simpleFoam solver. 
