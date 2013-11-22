@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.0.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+forces
+{
+    type                forceCoeffs;
+    functionObjectLibs  ( "libforces.so" );
+    outputControl       timeStep;
+    outputInterval      1;
+
+    patches     ( wall );
+    pName       p;
+    UName       U;
+    rhoName     rhoInf;
+    log         true;
+    rhoInf      1.225;           
+    liftDir     (-0.139173 0.990268 0);
+    dragDir     (0.990268 0.139173 0);
+    pitchAxis   (0 0 1);
+    magUInf     50;
+    lRef        1;       
+    Aref        1;       
+}
+
+
+// ************************************************************************* //
